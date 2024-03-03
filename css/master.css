@@ -1,11 +1,8 @@
 body {
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
+  margin: 0;
+  padding: 0;
 }
 
-.navbar {
-  padding: 18px 110px;
-}
 .navbar h2 i {
   padding-left: 2px;
   font-size: 25px;
@@ -22,7 +19,7 @@ body {
   position: relative;
 }
 .header .container .children .center h2 {
-  color: #FFF;
+  color: #fff;
   font-family: Roboto;
   font-size: 64px;
   font-style: normal;
@@ -30,7 +27,7 @@ body {
   line-height: 120%; /* 76.8px */
 }
 .header .container .children .center .care {
-  color: #FFF;
+  color: #fff;
   padding: 75px 120px;
   font-size: 64px;
   width: 700px;
@@ -46,7 +43,7 @@ body {
 .header .container .children .center .box .do {
   position: absolute;
   color: black;
-  background-color: #FFF;
+  background-color: #fff;
   width: 75px;
   top: 55%;
   left: 120px;
@@ -58,7 +55,7 @@ body {
   display: flex;
   gap: 8px;
   padding-left: 30px;
-  color: #FFF;
+  color: #fff;
 }
 .header .container .children .center .box .play img {
   width: 24px;
@@ -71,9 +68,9 @@ body {
 .header .container .children .text {
   display: flex;
   align-items: center;
-  color: #FFF;
+  color: #fff;
   display: space-between;
-  color: #FFF;
+  color: #fff;
   text-align: right;
   font-size: 18px;
   font-style: normal;
@@ -94,16 +91,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 86px;
+  padding: 86px 0;
 }
-.about-section .container-layout {
+.about-section .container {
   gap: 110px;
 }
-.about-section .content {
-  max-width: 600px;
-}
-.about-section .content .know {
-  color: #1D2130;
+.about-section .container .content .know {
+  color: #1d2130;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -112,7 +106,7 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.about-section .content .title {
+.about-section .container .content .title {
   font-size: 2.5em;
   margin-bottom: 1em;
   font-family: Roboto;
@@ -121,7 +115,7 @@ body {
   font-weight: 700;
   line-height: 120%; /* 57.6px */
 }
-.about-section .content .description {
+.about-section .container .content .description {
   margin-bottom: 1em;
   color: #525560;
   /* Paragraph */
@@ -130,7 +124,7 @@ body {
   font-weight: 300;
   line-height: 160%; /* 25.6px */
 }
-.about-section .content .description-2 {
+.about-section .container .content .description-2 {
   margin-bottom: 1em;
   color: #525560;
   /* Paragraph */
@@ -140,35 +134,36 @@ body {
   line-height: 160%; /* 25.6px */
   padding-bottom: 48px;
 }
-.about-section .content .learn-more-btn {
+.about-section .container .content .learn-more-btn {
   padding: 1em 2em;
   border-radius: 4px;
-  background: #F2C94C;
+  background: #f2c94c;
   color: #000000;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.about-section .video-thumbnail {
+.about-section .container .video-thumbnail {
   position: relative;
 }
-.about-section .video-thumbnail img {
+.about-section .container .video-thumbnail img {
   width: 100%;
   display: block;
 }
-.about-section .video-thumbnail .play-btn {
+.about-section .container .video-thumbnail .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.about-section .supporters {
+.about-section .container .oursupporters {
   padding-right: 100px;
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
 }
-.about-section .supporters .supporters-title {
-  color: #1D2130;
+.about-section .container .oursupporters .supporters-title {
+  color: #1d2130;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -176,39 +171,45 @@ body {
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-bottom: 33px;
+  position: relative;
+  overflow: hidden;
 }
-.about-section .supporters .logos {
+.about-section .container .oursupporters .supporters-title:after {
+  content: "";
+  position: absolute;
+  left: 190px;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.about-section .container .oursupporters .logos {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
 }
-.about-section .supporters .logos img {
-  margin: 0 1em;
+.about-section .container .oursupporters .logos img {
   width: 140px;
   height: auto;
 }
 
 .service-section {
-  background-color: #FCEDC6;
+  background-color: #fcedc6;
   padding: 0;
 }
 .service-section .container {
-  padding-left: 86px;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.service-section .container .text-content {
-  flex-basis: 58%;
-}
 .service-section .container .text-content .section {
   padding-left: 10px;
 }
 .service-section .container .text-content .section .section-title {
-  padding-top: 49px;
-  padding-bottom: -30px;
+  padding-top: 96px;
+  padding-bottom: 32px;
 }
 .service-section .container .text-content .section .service-title {
   font-size: 2.5rem;
@@ -216,18 +217,19 @@ body {
 }
 .service-section .container .text-content .section .service-description {
   color: #666;
-}
-.service-section .container .text-content .service-list {
-  list-style-type: none;
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 .service-section .container .text-content .service-list .service-item {
   display: flex;
-  align-items: center;
+}
+.service-section .container .text-content .service-list .service-item .line {
+  display: flex;
+  list-style: none;
 }
 .service-section .container .text-content .service-list .service-item img {
-  width: 6%;
-  padding-bottom: 50px;
-  padding-right: 40px;
+  width: 28px;
+  height: 28px;
 }
 .service-section .container .text-content .service-list .service-item .icon {
   display: inline-block;
@@ -235,29 +237,33 @@ body {
   height: 40px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 15px;
+  margin-right: 24px;
 }
 .service-section .container .text-content .service-list .service-item .item-description {
   color: #666;
+  max-width: 370px;
+  line-height: 160%;
 }
 
 .service-image {
-  padding-right: 86px;
-  padding-bottom: 86px;
+  border-radius: 10px;
+  padding-top: 147px;
+  padding-left: 96px;
+  padding-bottom: 96px;
 }
 
 .projects-container {
   flex-direction: column;
-  padding: 86px;
+  padding: 86px 0;
 }
 .projects-container .header {
   margin-bottom: 30px;
-  width: 40%;
+  width: 640px;
   padding-left: 125px;
 }
 .projects-container .header h2 {
   margin-bottom: 10px;
-  color: #1D2130;
+  color: #1d2130;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -270,7 +276,7 @@ body {
   left: -3%;
 }
 .projects-container .header h1 {
-  color: #1D2130;
+  color: #1d2130;
   /* H2 */
   font-family: Roboto;
   font-size: 48px;
@@ -281,6 +287,7 @@ body {
 }
 .projects-container .project-holder {
   gap: 24px;
+  padding-left: 110px;
 }
 .projects-container .project-holder .project-card {
   position: relative;
@@ -312,7 +319,7 @@ body {
 }
 .projects-container .project-holder .project-card .project-overlay .learn-more {
   display: inline-block;
-  background: #FFF;
+  background: #fff;
   color: black;
   padding: 10px 20px;
   border-radius: 5px;
@@ -328,19 +335,21 @@ body {
 .content-wrapper {
   background-color: #000000;
   width: 100%;
+  padding-left: 110px;
+  padding-bottom: 141px;
 }
 .content-wrapper .container {
   display: flex;
   flex-direction: column;
-  padding: 86px;
+  padding: 86px 0;
 }
 .content-wrapper .container .text {
-  color: #FFF;
+  color: #fff;
 }
 .content-wrapper .container .text h1 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #FFF;
+  color: #fff;
   /* H2 */
   font-family: Roboto;
   font-size: 48px;
@@ -352,8 +361,8 @@ body {
 .content-wrapper .container .text p {
   font-size: 14px;
   margin-bottom: 20px;
-  color: #FFF;
-  color: #FFF;
+  color: #fff;
+  color: #fff;
   max-width: 550px;
   /* Paragraph */
   font-size: 16px;
@@ -363,7 +372,7 @@ body {
 }
 .content-wrapper .container .legend-row {
   padding-top: 32px;
-  color: #FFF;
+  color: #fff;
   gap: 10px;
 }
 .content-wrapper .container .legend-row .legend-item {
@@ -395,24 +404,27 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-image: url("../imgs/hero.png"); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust as needed */
 }
 .hero .cta img {
   width: 100%;
 }
 .hero .cta .content {
   position: absolute;
-  color: #FFF;
+  color: #fff;
   flex-direction: column;
 }
 .hero .cta .content h1 {
-  color: #FFF;
+  color: #fff;
   /* H2 */
   font-family: Roboto;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 57.6px */
-  width: 55%;
+  width: 800px;
 }
 .hero .cta .btn {
   padding: 12px 32px;
@@ -420,47 +432,60 @@ body {
   margin-right: 32px;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: bold;
+  color: #000;
+  font-family: Roboto;
 }
 .hero .cta .btn.volunteer {
-  background: var(--Yellow, #F2C94C);
+  background: var(--Yellow, #f2c94c);
 }
 .hero .cta .btn.donate {
   background-color: #fff;
 }
 
 .events-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
   padding-top: 188px;
   padding-bottom: 86px;
 }
-
-.event-box {
-  background-color: #F2C94C; /* Example color, replace with your desired color */
+.events-container .our-events {
+  color: #1d2130;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+  padding-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.events-container .our-events:after {
+  content: "";
+  position: absolute;
+  left: 230px;
+  top: 26%;
+  width: 81%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+.events-container .event-box {
+  background-color: #f2c94c; /* Example color, replace with your desired color */
   border-radius: 20px;
-  padding: 0 48px; /* Adjust width as needed, subtracting the gap */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 0 40px;
+  gap: 24px;
 }
-.event-box .date {
+.events-container .event-box .date {
   display: block;
-  padding-right: 28px; /* As per your instructions */
-  width: 30px;
-  padding-bottom: 40px;
-  color: #1D2130;
+  color: #1d2130;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: 2px;
   text-transform: uppercase;
 }
-.event-box .date span {
-  color: #1D2130;
+.events-container .event-box .date span {
+  color: #1d2130;
   font-family: Roboto;
   font-size: 48px;
   font-style: normal;
@@ -468,13 +493,9 @@ body {
   line-height: 120%; /* 57.6px */
   font-variant: small-caps;
 }
-.event-box .event-info {
-  display: block;
-  padding-left: 24px;
-}
-.event-box .event-type {
+.events-container .event-box .event-type {
   padding-top: 100px;
-  color: #1D2130;
+  color: #1d2130;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -483,9 +504,9 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.event-box .event-title {
+.events-container .event-box .event-title {
   padding-bottom: 50px;
-  color: #1D2130;
+  color: #1d2130;
   /* H3 */
   font-family: Roboto;
   font-size: 28px;
@@ -498,62 +519,59 @@ body {
   margin-top: 86px;
   padding: 96px 110px;
   background-color: #000;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   color: #fff;
+  padding-right: 214px;
 }
-.footer .logo {
+.footer .container {
+  padding-right: 110px;
+  padding-top: 96px;
+}
+.footer .container .logo {
   font-size: 24px;
   padding-bottom: 0;
-  color: #FFF;
-  font-size: 24px;
+  color: #fff;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px; /* 183.333% */
-  padding-top: 40px;
 }
-.footer .menu {
-  padding-top: 50px;
+.footer .container .menu {
   display: flex;
+  flex-direction: column;
   gap: 80px;
 }
-.footer .menu .more-space {
+.footer .container .menu .more-space {
   gap: 40px;
 }
-.footer .menu ol {
+.footer .container .menu li {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  color: #fff;
   gap: 24px;
 }
-.footer .menu ol .head {
-  color: #FFF;
+.footer .container .menu li .head {
+  color: #fff;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 25.6px */
 }
-.footer .menu ol li {
-  /* 22.4px */
-}
-.footer .menu ol li a {
+.footer .container .menu li a {
   color: #fff;
   text-decoration: none;
-  /* 22.4px */
+  list-style: none;
 }
-.footer .subscribe {
+.footer .container .subscribe {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-right: 40px;
   padding-left: 40px;
 }
-.footer .subscribe p {
-  color: #FFF;
+.footer .container .subscribe .input-area {
+  display: flex;
+}
+.footer .container .subscribe p {
+  color: #fff;
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -561,21 +579,20 @@ body {
   line-height: 140%; /* 56px */
   width: 450px;
 }
-.footer .subscribe input {
-  width: 456px;
-  height: 64px;
+.footer .container .subscribe input {
   background: #333;
   border: 1px solid #444;
   color: #fff;
+  padding-right: 400px;
 }
-.footer .subscribe input[type=email]::-moz-placeholder {
+.footer .container .subscribe input::-moz-placeholder {
   padding-left: 24px;
 }
-.footer .subscribe input[type=email]::placeholder {
+.footer .container .subscribe input::placeholder {
   padding-left: 24px;
 }
-.footer .subscribe button {
-  background: #FFF;
+.footer .container .subscribe button {
+  background: #fff;
   color: black;
   padding: 26px 32px;
   border: none;
@@ -583,4 +600,277 @@ body {
   border-radius: 4px;
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
+}
+
+.know-about .container {
+  padding-top: 34px;
+}
+.know-about .container .know-about {
+  color: #1d2130;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.know-about .container .same-line .paragraph {
+  padding-bottom: 8px;
+  color: #1d2130;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.know-about .container .same-line h3 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  width: 13.67em;
+}
+.know-about .container .lorem {
+  color: #1d2130;
+  font-family: Roboto;
+}
+.know-about .container .lorem .Aenean {
+  font-size: 20px;
+  width: 23em;
+}
+.know-about .container .lorem .lorem {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+  width: 29em;
+}
+
+.main-image {
+  padding-bottom: 96px;
+  background: linear-gradient(to bottom, #ffffff 50%, #fcedc6 50%);
+}
+.main-image .container .background-image {
+  width: 80em; /* Adjust the width as needed */
+  height: 28em; /* Adjust the height as needed */
+  background-image: url("../imgs/BG (1).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+  border-radius: 20px;
+  position: relative;
+}
+.main-image .container .background-image .fa-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third-section {
+  background-color: #fcedc6;
+}
+.third-section .container .both {
+  padding-bottom: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+.third-section .container .both .mission-vission {
+  color: #1d2130;
+  font-family: Roboto;
+}
+.third-section .container .both .mission-vission .inclusive {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.third-section .container .both .mission-vission h4 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+}
+.third-section .container .both .mission-vission p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.supporters {
+  background-color: #fcedc6;
+}
+.supporters .container .logos {
+  padding-top: 49.5px;
+  padding-bottom: 97.3px;
+  display: flex;
+  gap: 97px;
+}
+.awards {
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+.awards .container .row h3 {
+  padding-bottom: 48px;
+}
+.awards .container .row .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.awards .container .row .logo img {
+  margin-bottom: 16px;
+}
+.awards .container .row .logo .year-section {
+  text-align: center;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center;
+  color: #1d2130;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.awards .container .row .logo .year-section h4 {
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.awards .container .row .logo .year-section p {
+  margin-bottom: 4px;
+}
+.awards .container .row .logo .year-section .best {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.awards .container .row .logo .year-section .berlin {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding-left: 8px;
+}
+
+.journey {
+  background-color: #f2c94c;
+  width: 100%;
+  max-width: 1280px;
+  height: 36em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-top: 128px;
+  padding-left: 96px;
+  color: #000;
+  font-family: Roboto;
+  padding-bottom: 64px;
+}
+.journey .container .row {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+}
+.journey .container .row .left-column .our-journey {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.journey .container .row .left-column .raised {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+.journey .container .row .left-column .lorem {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  opacity: 0.6;
+  width: 77%;
+}
+.journey .container .row .left-column .second-text {
+  padding-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+.journey .container .row .left-column .second-text .third {
+  padding-left: 3px;
+}
+.journey .container .row img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 37em;
+  height: 28em;
+}
+
+.team-section {
+  text-align: center;
+  color: #1d2130;
+  font-family: Roboto;
+}
+.team-section h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  padding-bottom: 16px;
+}
+.team-section .lead {
+  color: #525560;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  width: 45%;
+  margin: 0 auto; /* This centers the paragraph */
+  text-align: center;
+}
+.team-section .card {
+  border: none;
+  box-shadow: none;
+  color: #1d2130;
+  font-family: Roboto;
+  padding-bottom: 48px;
+}
+.team-section .card h5 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+.team-section .card p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  opacity: 0.6;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=master.css.map */
