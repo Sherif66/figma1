@@ -348,7 +348,7 @@ body {
     padding-bottom: 96px;
 
     .header {
-        margin-bottom: 30px;
+        margin-bottom: 66px;
         width: 640px;
         padding-left: 125px;
 
@@ -391,13 +391,25 @@ body {
 
             padding-bottom: 66px;
         }
+        h3 {
+            color: var(--Primary-text, #1d2130);
+
+            /* H2 */
+            font-family: Roboto;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+
+            width: 115%;
+        }
     }
     .project-holder {
         gap: 24px;
 
         .project-card {
             position: relative;
-            margin-bottom: 20px;
+
             img {
                 width: 100%;
                 display: block;
@@ -519,19 +531,29 @@ body {
 }
 
 .hero {
+    width: 100%;
+    display: flex;
+    align-items: center; /* This centers the content vertically */
+    justify-content: center; /* This centers the content horizontally */
+    text-align: center; /* This centers the text inside the paragraph */
     position: relative;
 
     .cta {
         display: flex;
+        flex-direction: column; /* Stack children vertically */
         justify-content: center;
         align-items: center;
+        padding: 20px;
+
         background-image: url("../imgs/hero.png"); /* Path to your image */
         background-size: cover;
         background-position: center;
-        height: 100%;
-        width: 100%;
-        max-width: 1280px;
+        height: 400px; /* Adjust as needed */
         border-radius: 20px;
+
+        img {
+            width: 100%;
+        }
         .content {
             position: absolute;
             color: $color-white;
@@ -554,7 +576,6 @@ body {
             border: none;
             margin-right: 32px;
             border-radius: 50px;
-            font-size: 16px;
             cursor: pointer;
             color: #000;
             font-family: Roboto;
