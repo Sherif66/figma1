@@ -1154,4 +1154,105 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 160%; /* 25.6px */
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .contact-us {
+  flex-basis: 50%;
+}
+.container .contact-us h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+.container .contact-us p {
+  color: #666;
+  font-size: 1em;
+}
+.container .contact-info {
+  flex-basis: 50%;
+}
+.container .contact-info .contact-block,
+.container .contact-info .social-icons {
+  margin-bottom: 20px;
+}
+.container .contact-info .contact-block h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+.container .contact-info .contact-block p {
+  color: #666;
+  margin: 5px 0;
+}
+.container .contact-info .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+.container .contact-info .social-icons li {
+  margin-right: 15px;
+}
+.container .contact-info .social-icons a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.contact-form {
+  width: 600px;
+  margin: 50px auto;
+}
+.contact-form .input-group {
+  margin-bottom: 20px;
+}
+.contact-form .input-group label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+.contact-form .input-group textarea {
+  resize: vertical;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form .input-half {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form .input-half .input-group {
+  width: 48%;
+}
+.contact-form .submit-button {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.contact-form .submit-button:hover {
+  background: #fada5e;
 }/*# sourceMappingURL=master.css.map */
